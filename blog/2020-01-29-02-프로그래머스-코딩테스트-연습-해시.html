@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>프로그래머스 코딩테스트 연습 | Yoont</title>
+    <meta name="description" content="">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon.png">
+  <link rel="icon" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+    
+    <link rel="preload" href="/assets/css/0.styles.86b99822.css" as="style"><link rel="preload" href="/assets/js/app.a629e1a9.js" as="script"><link rel="preload" href="/assets/js/4.6d2b7fee.js" as="script"><link rel="preload" href="/assets/js/12.40f0bc86.js" as="script"><link rel="prefetch" href="/assets/js/10.8910f7c5.js"><link rel="prefetch" href="/assets/js/11.17489880.js"><link rel="prefetch" href="/assets/js/13.c462619f.js"><link rel="prefetch" href="/assets/js/14.54259780.js"><link rel="prefetch" href="/assets/js/3.95ccb9e7.js"><link rel="prefetch" href="/assets/js/5.a3f79c9d.js"><link rel="prefetch" href="/assets/js/6.1d990232.js"><link rel="prefetch" href="/assets/js/7.d1b2f6c4.js"><link rel="prefetch" href="/assets/js/8.7890299c.js"><link rel="prefetch" href="/assets/js/9.128a6dfd.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.89c40eb9.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.86b99822.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/main.png" alt="Yoont" class="logo"> <span class="site-name can-hide">Yoont</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">Blog</a></div><div class="nav-item"><a href="/archive/" class="nav-link">Archive</a></div><div class="nav-item"><a href="/rss.xml" class="nav-link">
+  RSS Feed
+</a></div> <a href="https://github.com/yoontrevi" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Repo
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">Home</a></div><div class="nav-item"><a href="/blog/" class="nav-link router-link-active">Blog</a></div><div class="nav-item"><a href="/archive/" class="nav-link">Archive</a></div><div class="nav-item"><a href="/rss.xml" class="nav-link">
+  RSS Feed
+</a></div> <a href="https://github.com/yoontrevi" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Repo
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <!----> </div> <div class="blog" data-v-1a5b78d0><div class="blog__header" data-v-1a5b78d0><p class="publish-date" data-v-1a5b78d0><time datetime="2020-01-29T02:00:00.000Z" data-v-1a5b78d0>January 29, 2020</time></p> <p data-v-1a5b78d0>Time to read: 3 min read</p> <h1 class="blog__title" data-v-1a5b78d0>프로그래머스 코딩테스트 연습</h1></div> <div class="custom content default" data-v-1a5b78d0><h2 id="_1-완주하지-못한-선수-javascript"><a href="#_1-완주하지-못한-선수-javascript" aria-hidden="true" class="header-anchor">#</a> 1 완주하지 못한 선수 (javascript)</h2> <h2 id="문제-설명"><a href="#문제-설명" aria-hidden="true" class="header-anchor">#</a> 문제 설명</h2> <p>수많은 마라톤 선수들이 마라톤에 참여하였습니다. 단 한 명의 선수를 제외하고는 모든 선수가 마라톤을 완주하였습니다.</p> <p>마라톤에 참여한 선수들의 이름이 담긴 배열 participant와 완주한 선수들의 이름이 담긴 배열 completion이 주어질 때, 완주하지 못한 선수의 이름을 return 하도록 solution 함수를 작성해주세요.</p> <h2 id="제한사항"><a href="#제한사항" aria-hidden="true" class="header-anchor">#</a> 제한사항</h2> <p>마라톤 경기에 참여한 선수의 수는 1명 이상 100,000명 이하입니다.
+completion의 길이는 participant의 길이보다 1 작습니다.
+참가자의 이름은 1개 이상 20개 이하의 알파벳 소문자로 이루어져 있습니다.
+참가자 중에는 동명이인이 있을 수 있습니다.</p> <h2 id="입출력-예"><a href="#입출력-예" aria-hidden="true" class="header-anchor">#</a> 입출력 예</h2> <p>participant	completion	return
+[leo, kiki, eden]	[eden, kiki]	leo
+[marina, josipa, nikola, vinko, filipa]	[josipa, filipa, marina, nikola]	vinko
+[mislav, stanko, mislav, ana]	[stanko, ana, mislav]	mislav</p> <h2 id="입출력-예-설명"><a href="#입출력-예-설명" aria-hidden="true" class="header-anchor">#</a> 입출력 예 설명</h2> <p>예제 #1
+leo는 참여자 명단에는 있지만, 완주자 명단에는 없기 때문에 완주하지 못했습니다.</p> <p>예제 #2
+vinko는 참여자 명단에는 있지만, 완주자 명단에는 없기 때문에 완주하지 못했습니다.</p> <p>예제 #3
+mislav는 참여자 명단에는 두 명이 있지만, 완주자 명단에는 한 명밖에 없기 때문에 한명은 완주하지 못했습니다.</p> <h2 id="정확성"><a href="#정확성" aria-hidden="true" class="header-anchor">#</a> 정확성</h2> <div class="language-javascript [JAVASCRIPT] extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">solution</span> <span class="token operator">=</span> <span class="token punctuation">(</span>participant<span class="token punctuation">,</span> completion<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  completion<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token punctuation">(</span>string<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> index <span class="token operator">=</span> participant<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span>string<span class="token punctuation">)</span>
+    participant<span class="token punctuation">.</span><span class="token function">splice</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> participant<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="효율성"><a href="#효율성" aria-hidden="true" class="header-anchor">#</a> 효율성</h2> <div class="language-javascript [JAVASCRIPT] extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">solution</span> <span class="token operator">=</span> <span class="token punctuation">(</span>participant<span class="token punctuation">,</span> completion<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> answer <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> merged <span class="token operator">=</span> participant<span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span>completion<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> sorted <span class="token operator">=</span> merged<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> sorted<span class="token punctuation">.</span>length<span class="token punctuation">;</span> i <span class="token operator">+=</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> before <span class="token operator">=</span> sorted<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> after <span class="token operator">=</span> sorted<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>before <span class="token operator">!==</span> after <span class="token operator">||</span> i <span class="token operator">===</span> sorted<span class="token punctuation">.</span>length<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      answer <span class="token operator">=</span> before<span class="token punctuation">;</span>
+      <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> answer<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_2-전화번호-목록-python"><a href="#_2-전화번호-목록-python" aria-hidden="true" class="header-anchor">#</a> 2 전화번호 목록 (python)</h2> <div class="language-python [PYTHON] extra-class"><pre class="language-python"><code><span class="token keyword">def</span> <span class="token function">solution</span><span class="token punctuation">(</span>phone_book<span class="token punctuation">)</span><span class="token punctuation">:</span>
+  answer <span class="token operator">=</span> <span class="token boolean">True</span>
+  sorted_phone_book <span class="token operator">=</span> <span class="token builtin">sorted</span><span class="token punctuation">(</span>phone_book<span class="token punctuation">,</span> key<span class="token operator">=</span><span class="token builtin">len</span><span class="token punctuation">)</span>
+  <span class="token keyword">for</span> index<span class="token punctuation">,</span> value <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>sorted_phone_book<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>phone_book<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+      <span class="token keyword">if</span> i <span class="token operator">==</span> index<span class="token punctuation">:</span>
+        <span class="token keyword">continue</span>
+      <span class="token keyword">if</span> value <span class="token operator">==</span> sorted_phone_book<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token builtin">len</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+        answer <span class="token operator">=</span> <span class="token boolean">False</span>
+        <span class="token keyword">break</span>
+    <span class="token keyword">break</span>
+  <span class="token keyword">return</span> answer
+</code></pre></div><h2 id="_3-위장-javascript"><a href="#_3-위장-javascript" aria-hidden="true" class="header-anchor">#</a> 3 위장 (javascript)</h2> <div class="language-javascript [PYTHON] extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">solution</span> <span class="token operator">=</span> <span class="token punctuation">(</span>clothes<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> clothKinds <span class="token operator">=</span> clothes<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>cloth<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> cloth<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> countByKind <span class="token operator">=</span> clothKinds<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span>result<span class="token punctuation">,</span> kind<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>result<span class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span class="token punctuation">(</span>kind<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      result<span class="token punctuation">[</span>kind<span class="token punctuation">]</span> <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 입지않은 경우의 수 포함(생각도 못함)</span>
+      result<span class="token punctuation">[</span>kind<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">2</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    <span class="token keyword">return</span> result<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> counts <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">values</span><span class="token punctuation">(</span>countByKind<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">// 아무것도 입지않은 경우의 수 제외(생각도 못함)</span>
+  <span class="token keyword">const</span> answer <span class="token operator">=</span> counts<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span>total<span class="token punctuation">,</span> v<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> total <span class="token operator">*=</span> v<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span>
+  <span class="token keyword">return</span> answer<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_4-베스트앨범-javascript"><a href="#_4-베스트앨범-javascript" aria-hidden="true" class="header-anchor">#</a> 4 베스트앨범 (javascript)</h2> <div class="language-javascript [PYTHON] extra-class"><pre class="language-javascript"><code><span class="token keyword">const</span> <span class="token function-variable function">solution</span> <span class="token operator">=</span> <span class="token punctuation">(</span>genres<span class="token punctuation">,</span> plays<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+<span class="token comment">// 하나의 노래의 횟수로 순서를 정하는 것이 아닌 장르 총 노래 재생횟수로 정렬</span>
+<span class="token comment">//     const pairs = genres.map((genre, i) =&gt; [genre, i, plays[i]]);</span>
+<span class="token comment">//     const sorted = pairs.sort((a, b) =&gt; b[2] - a[2]);</span>
+<span class="token comment">//     const numbersByGenre = sorted.reduce((result, array) =&gt; {</span>
+<span class="token comment">//         const genre = array[0];</span>
+<span class="token comment">//         const number = array[1];</span>
+<span class="token comment">//         const isGenre = Object(result).hasOwnProperty(genre);</span>
+
+<span class="token comment">//         if (!isGenre) {</span>
+<span class="token comment">//             result[genre] = [number];</span>
+<span class="token comment">//         } else {</span>
+<span class="token comment">//             if (result[genre].length &lt; 2) {</span>
+<span class="token comment">//                 result[genre].push(number);</span>
+<span class="token comment">//             }</span>
+<span class="token comment">//         }</span>
+
+<span class="token comment">//         return result;</span>
+<span class="token comment">//     }, {});</span>
+
+  <span class="token keyword">const</span> pairs <span class="token operator">=</span> genres<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>genre<span class="token punctuation">,</span> i<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">[</span>genre<span class="token punctuation">,</span> plays<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> i<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> sortedByPlay <span class="token operator">=</span> pairs<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> b<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-</span> a<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> albumByGenre <span class="token operator">=</span> sortedByPlay<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span>album<span class="token punctuation">,</span> array<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> genre <span class="token operator">=</span> array<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> play <span class="token operator">=</span> array<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> number <span class="token operator">=</span> array<span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token keyword">const</span> isGenre <span class="token operator">=</span> <span class="token function">Object</span><span class="token punctuation">(</span>album<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span class="token punctuation">(</span>genre<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>isGenre<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      album<span class="token punctuation">[</span>genre<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+        totalPlay<span class="token punctuation">:</span> play<span class="token punctuation">,</span>
+        numbers<span class="token punctuation">:</span> <span class="token punctuation">[</span>number<span class="token punctuation">]</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+      album<span class="token punctuation">[</span>genre<span class="token punctuation">]</span><span class="token punctuation">.</span>totalPlay <span class="token operator">+=</span> play<span class="token punctuation">;</span>
+
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>album<span class="token punctuation">[</span>genre<span class="token punctuation">]</span><span class="token punctuation">.</span>numbers<span class="token punctuation">.</span>length <span class="token operator">&lt;</span> <span class="token number">2</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        album<span class="token punctuation">[</span>genre<span class="token punctuation">]</span><span class="token punctuation">.</span>numbers<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span>number<span class="token punctuation">)</span><span class="token punctuation">;</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> album<span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">const</span> albums <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">values</span><span class="token punctuation">(</span>albumByGenre<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> sortedByTotalPlay <span class="token operator">=</span> albums<span class="token punctuation">.</span><span class="token function">sort</span><span class="token punctuation">(</span><span class="token punctuation">(</span>a<span class="token punctuation">,</span> b<span class="token punctuation">)</span> <span class="token operator">=&gt;</span> b<span class="token punctuation">.</span>totalPlay <span class="token operator">-</span> a<span class="token punctuation">.</span>totalPlay<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> sortedAlbums <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">values</span><span class="token punctuation">(</span>sortedByTotalPlay<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> answer <span class="token operator">=</span> sortedAlbums<span class="token punctuation">.</span><span class="token function">reduce</span><span class="token punctuation">(</span><span class="token punctuation">(</span>result<span class="token punctuation">,</span> <span class="token punctuation">{</span> numbers <span class="token punctuation">}</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> result<span class="token punctuation">.</span><span class="token function">concat</span><span class="token punctuation">(</span>numbers<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> answer<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div></div> <div class="page-edit" data-v-1a5b78d0><div class="edit-link" data-v-1a5b78d0><a href="https://github.com/yoontrevi/edit/master/src/blog/2020-01-29-02-프로그래머스-코딩테스트-연습-해시.md" target="_blank" rel="noopener noreferrer" data-v-1a5b78d0>Open a new issue!</a> <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound" data-v-1a5b78d0 data-v-1a5b78d0><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></div> <!----></div> <!----> </div> <!----></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.a629e1a9.js" defer></script><script src="/assets/js/4.6d2b7fee.js" defer></script><script src="/assets/js/12.40f0bc86.js" defer></script>
+  </body>
+</html>
